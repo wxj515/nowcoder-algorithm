@@ -1,4 +1,4 @@
-package Sort;
+﻿package Sort;
 
 /**
  * 归并排序
@@ -16,6 +16,7 @@ public class MergeSort {
         int mid = L + ((R - L) >> 1); //L和R中点的位置
         sortProcess(arr, L, mid);  //T(n/2)子过程：左部分排好
         sortProcess(arr, mid + 1, R);  //T(n/2)右部分排好
+	merge(arr, L, mid, R);
     }
 
     public static void merge(int[] arr, int L, int mid, int R){
