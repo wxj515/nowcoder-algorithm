@@ -30,11 +30,11 @@ public class CompleteTreeNodeNumber {
         }
     }
 
-    public static int mostLeftLevel(Node node, int level) {
-        while (node != null) {
-            level++;
-            node = node.left;
-        }
-        return level - 1;
-    }
+//    public static int mostLeftLevel(Node node, int level) {
+//        while (node != null) {
+//            level++;
+//            node = node.left;
+//        }
+//        return level - 1;
+//    }
 }
